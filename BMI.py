@@ -289,3 +289,5 @@ This is a temporary script file.
 #import random
 #for i in range(3):
 #    print random.randrange(0, 101, 5)
+
+print "Commit Changes"
