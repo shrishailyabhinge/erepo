@@ -27,6 +27,13 @@ Created on Mon Oct 09 10:39:25 2017
 #n=n+1
 #pat(n)
 ################3:Write a program to Sort a List of Tuples in##### 
+#def last(n): return n[-1]
+#
+#def sort_list_last(tuples):
+#  return sorted(tuples, key=last)
+#
+#print(sort_list_last([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
+
 ######Increasing Order by the Last Element in Each Tuple######
 
 ################4:Write a program to Find the Sum of Digits in a Number######
@@ -59,7 +66,7 @@ Created on Mon Oct 09 10:39:25 2017
 #        print 'Not Found'
 #    
 #Find(r"[\w\d.]+@","shreebhinge@gmail.com")
-#lstrip@ n save it.
+#strip@ n save it.
 
 ##############7.Write a program to display an user-defined Exception##########
 #class InvalidAgeError(Exception):
@@ -81,8 +88,43 @@ Created on Mon Oct 09 10:39:25 2017
 #ageCheck(age)
 
 #########8:
-#########9:
-########10:
+#########9:Write a PYTHON program to check the validity of a password chosen by a user.
+#import re
+#p= raw_input("Input your password:")
+#x = True
+#while x:  
+#    if (len(p)<6 or len(p)>12):
+#        break
+#    elif not re.search("[a-z]",p):
+#        break
+#    elif not re.search("[0-9]",p):
+#        break
+#    elif not re.search("[A-Z]",p):
+#        break
+#    elif not re.search("[$#@]",p):
+#        break
+#    elif re.search("\s",p):
+#        break
+#    else:
+#        print("Valid Password")
+#        x=False
+#        break
+#
+#if x:
+#    print("Not a Valid Password")
+########10:Write a program to accept Date & Time in IST format and convert it to US format(EST)
+#from datetime import datetime
+#from pytz import timezone
+#
+#fmt = "%Y-%m-%d %H:%M:%S %Z%z"
+#
+## Current time in IST
+#now_ist = datetime.now(timezone('GMT+5.5'))
+#print now_ist.strftime(fmt)
+#
+## Convert to US/Pacific time zone
+#now_usest = now_ist.astimezone(timezone('US/Eastern'))
+#print now_usest.strftime(fmt)
 #########11:Write a Python program to find whether it contains an additive 
 ##sequence or not
 
@@ -105,6 +147,16 @@ Created on Mon Oct 09 10:39:25 2017
 #        
 #n=int(raw_input("Enter a number:"))
 #power_of_two(n)
+
+##15:.Write a program to Sort a List of Tuples in Increasing Order by the Last Element in Each Tuple
+
+#def last(n): return n[-1]
+#
+#def sort_list_last(tuples):
+#  return sorted(tuples, key=last)
+#
+#
+#print(sort_list_last([(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]))
 
 #######16:Write a Program to Count the Number of Lines in a Text File
 
@@ -134,4 +186,59 @@ Created on Mon Oct 09 10:39:25 2017
 #main()
 
 
-##
+##21:Write a Program to Read the Contents of a File in Reverse Order
+
+#for line in open("file.txt", 'r').readlines()[::-1]:
+#    print line[::-1].replace('\n', '')
+
+##22:Write a program that accepts a sentence and calculate the number of letters and digits.
+#st = raw_input("Input a string:")
+#digit=0
+#letter=0
+#for c in st:
+#    if c.isdigit():
+#        digit=digit+1
+#    elif c.isalpha():
+#        letter=letter+1
+#    else:
+#        pass
+#print("Letters", letter)
+#print("Digits", digit)
+
+##23:Write a Program to Read a String from the User and Append it into a File
+#file3=open("file.txt","a")
+#c=raw_input("Enter string to append: \n");
+#file3.write("\n")
+#file3.write(c)
+#file3.close()
+#
+#print("Contents of appended file:");
+#for line in open("file.txt", 'r').readlines()[::]:
+#    print line[::]
+#file3.close()
+
+##24.Write a program which accepts a sequence of comma-separated numbers from 
+#console and generate a list and a tuple which contains every number.
+#li=raw_input("Enter elements for list:")
+#li=li.split(",")
+#print li
+#
+#tu=tuple(li)
+#print tu
+
+##25:
+#dic = {}
+#
+#param = input("Please enter number:")
+#
+#for i in range(1, int(param)+1 ):
+#    dic[i] = i * i
+#
+#print(dic)
+
+#from pytz import all_timezones
+#
+#print len(all_timezones)
+#for zone in all_timezones:
+#    
+#        print zone
