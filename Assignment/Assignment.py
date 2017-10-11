@@ -29,8 +29,13 @@ Created on Mon Oct 09 11:24:04 2017
 
 #for i in range(0,5):
 #    for j in range(0,i+1):
-#        print '*',
+#            print "*",
 #    print
+#    
+#for k in range(5,1,-1):
+#    for z in range(1,k):
+#        print "*",
+#    print     
 
 
 ##4:Write a Python program to get the Fibonacci series between 0 to 50

@@ -16,11 +16,11 @@ Created on Mon Oct 09 10:39:25 2017
 #    print("The dividend may not be zero!")
 ######################2:pattern#####################
 #def pat(n):
-#    for i in range(1, n):
-#        for j in range(65, 65+i):
-#            a = chr(j)
-#            print a,
-#            
+#    ch=65
+#    for i in range(0, n):
+#        for j in range(0, i):
+#            print chr(ch),
+#            ch=ch+1
 #        print
 #
 #n=int(raw_input("Enter Number Of rows:"))
@@ -61,12 +61,12 @@ Created on Mon Oct 09 10:39:25 2017
 #    match=re.search(pat,text)
 #    
 #    if match:
-#        print match.group()
+#        print match.group(1)
 #    else:
 #        print 'Not Found'
 #    
-#Find(r"[\w\d.]+@","shreebhinge@gmail.com")
-#strip@ n save it.
+#Find(r"([\w\d.]+)@([\w.]+)","shreebhinge@gmail.com")
+
 
 ##############7.Write a program to display an user-defined Exception##########
 #class InvalidAgeError(Exception):
