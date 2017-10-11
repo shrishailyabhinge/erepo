@@ -129,6 +129,25 @@ Created on Mon Oct 09 10:39:25 2017
 ##sequence or not
 
 
+##12: WAP to implement logging 
+
+
+##13:Write a Python program where you take any positive integer n, if n is even, 
+#divide it by 2 to get n / 2. If n is odd, multiply it by 3 and add 1 to obtain 
+#3n + 1. Repeat the process until you reach 1.
+
+#number=int(raw_input("Enter a number:"))
+#print number,
+#
+#while number!=1:
+#    
+#    if number%2==0:
+#        number/=2
+#    else:
+#        number=number * 3 + 1
+#        
+#    print number,
+
 #########14:Write a Python program to check if a given positive integer is a power of two
 #number = False
 #
